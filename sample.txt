@@ -1,0 +1,4 @@
+say hello
+delay 1
+say goodbye
+quit
