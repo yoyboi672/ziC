@@ -22,6 +22,8 @@ for line in code.split('\n'):
         print(line.removeprefix("say "))
     elif line.startswith("delay "):
         sleep(int(line.removeprefix("delay ").strip()))
+    elif line.strip() == "quit":
+        quit()
     else:
         print("Invalid command:", line)
         if quit_when_error:
